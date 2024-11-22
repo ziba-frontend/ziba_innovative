@@ -14,7 +14,7 @@ const Hero = () => {
                   Solutions
                </p>
                <div className="flex items-center justify-center gap-6">
-                  <Button className="bg-main rounded-full p-6">
+                  <Button className="bg-submain rounded-full p-6">
                      Try free trial
                   </Button>
                   <Button

@@ -75,4 +75,31 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  h1 {
+    @apply text-[24px] md:text-[40px] font-bold leading-tight;
+ }
+
+ h2 {
+    @apply text-base sm:text-[20px] md:text-[36px] font-bold leading-tight;
+ }
+
+ h3 {
+    @apply text-xl font-semibold leading-snug;
+ }
+
+ h4 {
+    @apply text-lg font-semibold leading-snug;
+ }
+
+ h5 {
+    @apply text-base font-bold leading-normal;
+ }
+
+ h6 {
+    @apply text-sm font-medium leading-normal;
+ }
+ p {
+    @apply text-[16px] md:text-[18px];
+ }
 }
+
