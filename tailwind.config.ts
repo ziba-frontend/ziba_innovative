@@ -8,6 +8,13 @@ const config: Config = {
       "./app/**/*.{js,ts,jsx,tsx,mdx}",
    ],
    theme: {
+      container: {
+         center: true,
+         padding: "2rem",
+         screens: {
+           "2xl": "1400px",
+         },
+       },
       extend: {
          colors: {
             main: "#1E6B25",
@@ -43,7 +50,7 @@ const config: Config = {
                DEFAULT: "hsl(var(--destructive))",
                foreground: "hsl(var(--destructive-foreground))",
             },
-            border: "hsl(var(--border))",
+            border: "#F9FAFB",
             ring: "hsl(var(--ring))",
             chart: {
                "1": "hsl(var(--chart-1))",
