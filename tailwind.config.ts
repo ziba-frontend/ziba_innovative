@@ -20,6 +20,7 @@ const config: Config = {
             main: "#1E6B25",
             submain: "#34CD33",
             input: "#EBECED",
+            second:"#181D2A",
             background: "hsl(var(--background))",
             foreground: "hsl(var(--foreground))",
             card: {

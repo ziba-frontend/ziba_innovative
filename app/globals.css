@@ -10,6 +10,15 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+ }
+
+ .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+ }
 }
 
 @layer base {
@@ -101,5 +110,19 @@ body {
  p {
     @apply text-[16px] md:text-[18px];
  }
+}
+
+
+
+.swiper-pagination {
+  bottom: 0px !important; 
+}
+
+.swiper-pagination-bullet {
+  background-color: #34CD33 !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #8cfc8c !important;
 }
 
