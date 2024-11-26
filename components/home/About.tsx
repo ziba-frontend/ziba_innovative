@@ -5,15 +5,16 @@ import Ab1 from "@/public/svgs/ab1.svg";
 
 const About = () => {
    return (
-      <div className="container mx-auto flex flex-col gap-6 md:flex-row md:gap-4 py-6 md:py-12 relative">
+      <div className="container mx-auto flex flex-col gap-6 lg:flex-row md:gap-4 py-6 md:py-12 xl:py-20 relative mt-6 items-center">
          <Image
             src={Ab1}
             alt="about ziba"
-            className="absolute top-0 right-0"
+            className="absolute top-2 right-2 w-10 sm:w-20"
          />
          <Image
             src={AboutImg}
             alt="about ziba"
+             className="md:w-[400px] xl:w-[600px] "
          />
          <div className="flex items-center justify-center flex-col gap-4 ">
             <p className="uppercase text-center">about us</p>
