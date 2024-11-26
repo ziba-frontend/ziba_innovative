@@ -3,6 +3,9 @@ import React from "react";
 import Meeting1 from "@/public/images/meeting1.png";
 import Meeting2 from "@/public/images/meeting2.png";
 import Mission from "@/public/images/mission.png";
+import About from "@/components/home/About";
+import Team from "@/components/Team";
+import Testimonials from "@/components/Testimonials";
 const Company = () => {
    return (
       <div className="py-6 md:py-10">
@@ -41,7 +44,7 @@ const Company = () => {
          </div>
 
          {/* about */}
-
+         <About />
          {/* Mission */}
 
          <div className="bg-input py-8">
@@ -73,10 +76,9 @@ const Company = () => {
          </div>
 
          {/* team */}
-
+         <Team />
          {/* testimonials */}
-
-
+         <Testimonials />
       </div>
    );
 };
