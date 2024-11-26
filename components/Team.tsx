@@ -40,7 +40,7 @@ const data = [
 ];
 const Team = () => {
    return (
-      <div className="container mx-auto flex items-center justify-center flex-col gap-6 py-8 md:py-16">
+      <div className="px-2 mx-auto flex items-center justify-center flex-col gap-6 py-8 md:py-16">
          <p className="uppercase">CREATIVE TEAM</p>
          <h2 className="text-center md:w-3/4">
             Your Partner in Expertise and Excellence
@@ -56,23 +56,31 @@ const Team = () => {
                      spaceBetween: 5,
                   },
                   640: {
-                     slidesPerView: 1,
+                     slidesPerView: 1.5,
                      spaceBetween: 8,
                   },
                   768: {
-                     slidesPerView: 1.1,
+                     slidesPerView: 2,
                      spaceBetween: 10,
                   },
                   900: {
-                     slidesPerView: 1.2,
+                     slidesPerView: 2.2,
                      spaceBetween: 10,
                   },
                   1024: {
-                     slidesPerView: 1.5,
+                     slidesPerView: 2.5,
                      spaceBetween: 10,
                   },
                   1100: {
+                     slidesPerView: 3,
+                     spaceBetween: 10,
+                  },
+                  1200: {
                      slidesPerView: 3.5,
+                     spaceBetween: 10,
+                  },
+                  1400: {
+                     slidesPerView: 4,
                      spaceBetween: 10,
                   },
                }}

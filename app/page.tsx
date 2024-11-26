@@ -5,6 +5,7 @@ import React from "react";
 import Projects from "@/components/home/Projects";
 import Offers from "@/components/home/Offers";
 import Team from "@/components/Team";
+import Testimonials from "@/components/Testimonials";
 
 const Home = () => {
    return (
@@ -15,6 +16,7 @@ const Home = () => {
          <Projects/>
          <Offers/>
          <Team/>
+         <Testimonials/>
       </div>
    );
 };
