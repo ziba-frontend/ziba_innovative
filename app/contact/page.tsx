@@ -19,10 +19,10 @@ import { Input } from "@/components/ui/input";
 import { LocateIcon, Mail, Phone } from "lucide-react";
 
 const formSchema = z.object({
-   name: z.string().min(1, { message: "name is required." }),
+   name: z.string().min(1, { message: "Name is required." }),
    email: z.string().email({ message: "Invalid email address." }),
-   Message: z.string().min(1, { message: "Message is required." }),
-});
+   message: z.string().min(1, { message: "Message is required." }), 
+ });
 
 const Contact = () => {
    const form = useForm({
