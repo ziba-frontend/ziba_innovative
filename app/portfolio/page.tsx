@@ -34,10 +34,11 @@ const Portfolio = () => {
                </div>
             </div>
          </div>
-         <div className="container flex flex-col gap-6 lg:gap-8 mx-auto md:flex-row items-center justify-center pt-6">
+         <div className="container flex flex-col-reverse gap-6 lg:gap-8 mx-auto md:flex-row items-center justify-center pt-6 ">
             <Image
                src={Zibaweb}
                alt="ziba"
+                className="md:w-[400px] xl:w-1/2"
             />
             <div className="flex flex-col gap-4">
                <p>Website Design</p>
@@ -68,12 +69,14 @@ const Portfolio = () => {
             <Image
                src={Delex}
                alt="ziba"
+                className="md:w-[400px] xl:w-1/2"
             />
          </div>
-         <div className="container flex flex-col gap-6 lg:gap-8 mx-auto md:flex-row items-center justify-center pt-6">
+         <div className="container flex flex-col-reverse gap-6 lg:gap-8 mx-auto md:flex-row items-center justify-center pt-6">
             <Image
                src={Cook}
                alt="ziba"
+                className="md:w-[400px] xl:w-1/2"
             />
             <div className="flex flex-col gap-4">
                <p>Mobile app Development</p>
@@ -102,6 +105,7 @@ const Portfolio = () => {
             <Image
                src={Adox}
                alt="ziba"
+                className="md:w-[400px] xl:w-1/2 "
             />
          </div>
          <div className="py-8 flex items-center justify-center container mt-6">

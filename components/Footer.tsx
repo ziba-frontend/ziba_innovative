@@ -42,53 +42,46 @@ const Footer = () => {
   return (
     <>
       
-      <div className="container p-6 flex flex-col md:flex-row items-center justify-center md:justify-between bg-main text-white relative rounded-t-[40px] ">
-        <h2 className="lg:w-[30%]">Let’s discuss and bring your vision to life.</h2>
-        <Button className="bg-submain p-6 rounded-full flex items-center justify-center text-white">
-          Let’s Talk <ArrowRight />
-        </Button>
-  
+      <div className="container p-6 flex flex-col items-center text-center justify-center md:flex-row md:justify-between bg-main text-white relative rounded-t-[40px]">
+  <h2 className="w-full md:w-[30%] mb-4 md:mb-0">Let’s discuss and bring your vision to life.</h2>
+  <Button className="bg-submain p-6 rounded-full flex items-center justify-center text-white">
+    Let’s Talk <ArrowRight />
+  </Button>
+</div>
+
+<div className="bg-main p-6 text-white relative min-h-[70vh] flex flex-col items-center">
+  <div className="container mx-auto px-4 border-b border-input py-6 flex flex-col items-center sm:flex-row sm:justify-between sm:items-start text-center sm:text-left">
+    <div className="flex flex-col items-center sm:items-start justify-center w-full lg:w-[40%]">
+      <div className="flex flex-col items-center sm:items-start gap-3">
+        <Image src={Logo} alt="ZibaInnovative" />
+        <h4 className="italic bold">Ziba Innovatives</h4>
+        <p className="text-input">Empowering Growth Through Innovation</p>
       </div>
-  
+    </div>
 
-      {/* Main Footer */}
-      <div className="bg-main p-6 text-white relative min-h-[70vh] flex flex-col items-center">
-        <div className="container mx-auto px-4 border-b border-input py-6 flex items-start flex-col sm:flex-row border-t md:py-10">
-          {/* Logo and Description */}
-          <div className="flex flex-col justify-between h-full lg:w-[40%]">
-            <div>
-              <div className="flex items-center py-4 gap-3">
-                <Image src={Logo} alt="ZibaInnovative" />
-                <h4 className="italic bold">Ziba Innovatives</h4>
-              </div>
-              <p className="text-input">Empowering Growth Through Innovation</p>
-            </div>
-          </div>
-
-          {/* Links */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-4 justify-between w-full">
-            {Links.map((link, index) => (
-              <div key={index}>
-                <h3 className="font-medium mb-4">{link.title}</h3>
-                <ul className="space-y-3">
-                  {link.links.map((text, subIndex) => (
-                    <li key={subIndex}>
-                      <Link href={text.link} className="hover:underline text-input">
-                        {text.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+    <div className="grid grid-cols-1 gap-6 mt-6 sm:mt-0 md:grid-cols-2 xl:grid-cols-3 w-full">
+      {Links.map((link, index) => (
+        <div key={index}>
+          <h3 className="font-medium mb-4">{link.title}</h3>
+          <ul className="space-y-3">
+            {link.links.map((text, subIndex) => (
+              <li key={subIndex}>
+                <Link href={text.link} className="hover:underline text-input">
+                  {text.name}
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
-        <p className="text-center my-3 mt-6">
-          &copy;<span className="mx-2">Copyright 2024</span> by Ziba Innovatives. All rights reserved
-        </p>
-        <Image src={circle2} alt="circle" className="absolute top-1/2 left-0 -translate-y-1/2" />
-        <Image src={circle} alt="circle" className="absolute bottom-0 right-0" />
-      </div>
+      ))}
+    </div>
+  </div>
+  <p className="text-center my-3 mt-6">
+    &copy;<span className="mx-2">Copyright 2024</span> by Ziba Innovatives. All rights reserved
+  </p>
+  <Image src={circle2} alt="circle" className="absolute top-1/2 left-0 -translate-y-1/2" />
+  <Image src={circle} alt="circle" className="absolute bottom-0 right-0" />
+</div>
     </>
   );
 };

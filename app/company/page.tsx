@@ -22,7 +22,7 @@ const Company = () => {
                className="w-full max-h-[109.5vh]"
             />
             <div className="p-6 flex flex-col gap-8 bg-[#030A11] text-white absolute bottom-0 w-full md:w-1/2 left-1/2 -translate-x-1/2">
-               <h3>Your Partner in Achieving the Extraordinary</h3>
+               <h2 className="lg:w-3/4">Your Partner in Achieving the Extraordinary</h2>
                <p>
                   Together, we turn ambitious visions into actionable realities,
                   empowering your business to thrive in a competitive world.
