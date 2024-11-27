@@ -5,6 +5,7 @@ import Zibaweb from "@/public/images/zibaweb.png";
 import Delex from "@/public/images/delex.png";
 import Cook from "@/public/images/cook.png"
 import Adox from "@/public/images/adox.png"
+import Faqs from "@/components/Faqs";
 
 const Portfolio = () => {
    return (
@@ -108,13 +109,13 @@ const Portfolio = () => {
                 className="md:w-[400px] xl:w-1/2 "
             />
          </div>
-         <div className="py-8 flex items-center justify-center container mt-6">
+         <div className="py-8 flex items-center justify-center container my-6 xl:my-8">
          <Button className="bg-submain rounded-full p-4 w-fit">
                   Explore More
                </Button>
          </div>
          {/* faqs */}
-         
+         <Faqs/>
       </div>
    );
 };

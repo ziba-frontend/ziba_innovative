@@ -5,7 +5,6 @@ import "swiper/css";
 import { Pagination } from "swiper/modules";
 import Image from "next/image";
 import review1 from "@/public/images/review1.png";
-import { LucideQuote, Quote } from "lucide-react";
 import quote from "@/public/svgs/quote.svg";
 import stars from "@/public/svgs/stars.svg";
 import segment from "@/public/svgs/segment.svg";
@@ -103,7 +102,7 @@ const Testimonials = () => {
                            <p className="font-bold">
                               The platform transformed the way we manage our
                               operations. What used to take hours now takes
-                              minutes, and we've cut costs significantly. Highly
+                              minutes, and we&apos;ve cut costs significantly. Highly
                               recommended!
                            </p>
                            <div className="flex items-center justify-between py-4">

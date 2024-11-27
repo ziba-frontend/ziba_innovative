@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import hero from "@/public/images/hero.jpg";
 import Image from "next/image";
-import { Video, Watch, WatchIcon } from "lucide-react";
+import { Video } from "lucide-react";
 import openzep from "@/public/svgs/openzep.svg"
 import oracle from "@/public/svgs/oracle.svg"
 import morpheus from "@/public/svgs/morpheus.svg"

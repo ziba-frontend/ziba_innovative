@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { ArrowRight, ChevronDown } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -22,23 +22,33 @@ AccordionItem.displayName = "AccordionItem"
 
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex">
-    <AccordionPrimitive.Trigger
-      ref={ref}
-      className={cn(
-        "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-90",
-        "data-[state=open]:text-submain", 
-        className
-      )}
-      {...props}
-    >
-      {children}
-      <ArrowRight className="h-6 w-6 shrink-0 transition-transform duration-200 font-bold" />
-    </AccordionPrimitive.Trigger>
-  </AccordionPrimitive.Header>
-))
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> & {
+    customIcon?: (isOpen: boolean) => React.ReactNode;
+  }
+>(({ className, children, customIcon, ...props }, ref) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  return (
+    <AccordionPrimitive.Header className="flex">
+      <AccordionPrimitive.Trigger
+        ref={ref}
+        className={cn(
+          "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline",
+          "data-[state=open]:text-submain [&[data-state=open]>svg]:rotate-90",
+          className
+        )}
+        {...props}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {children}
+        {customIcon ? customIcon(isOpen) : (
+          <ArrowRight className="h-6 w-6 shrink-0 transition-transform duration-200 font-bold" />
+        )}
+      </AccordionPrimitive.Trigger>
+    </AccordionPrimitive.Header>
+  );
+});
+AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
 
 const AccordionContent = React.forwardRef<

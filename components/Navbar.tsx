@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
+import Logo from "@/public/svgs/logo.svg"
+import Image from "next/image";
 
 const Navbar = () => {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +19,7 @@ const Navbar = () => {
                className="flex gap-1 items-center justify-center"
                href="/"
             >
-               {/* <Image src={Logo} alt="Logo" /> */}
+               <Image src={Logo} alt="Logo" />
                <p className="font-bold italic">Ziba Innovatives</p>
             </Link>
 

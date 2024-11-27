@@ -8,9 +8,9 @@ import person1 from "@/public/images/person1.png";
 import person2 from "@/public/images/person2.png";
 import person3 from "@/public/images/person3.png";
 import person4 from "@/public/images/person4.png";
-import fb from "@/public/svgs/fb.svg"
-import ig from "@/public/svgs/ig.svg"
-import twitter from "@/public/svgs/twitter.svg"
+import fb from "@/public/svgs/fb.svg";
+import ig from "@/public/svgs/ig.svg";
+import twitter from "@/public/svgs/twitter.svg";
 
 const data = [
    {
@@ -101,9 +101,18 @@ const Team = () => {
                            <p>{dev.title}</p>
                            <small>{dev.desc}</small>
                            <div className="flex py-3 items-center justify-center gap-2">
-                            <Image src={fb} alt="fb"/>
-                            <Image src={ig} alt="ig"/>
-                            <Image src={twitter} alt="twitter"/>
+                              <Image
+                                 src={fb}
+                                 alt="fb"
+                              />
+                              <Image
+                                 src={ig}
+                                 alt="ig"
+                              />
+                              <Image
+                                 src={twitter}
+                                 alt="twitter"
+                              />
                            </div>
                         </div>
                      </div>
