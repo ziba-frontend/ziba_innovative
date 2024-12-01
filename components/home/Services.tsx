@@ -66,7 +66,7 @@ const Services = () => {
                </AccordionTrigger>
                <AccordionContent className="flex items-center justify-center flex-col gap-4 w-[90%] mx-auto md:items-start">
                   <p className="text-content">
-                  Empower your business with the flexibility and scalability of cloud technology. At Ziba Innovatives, we deliver tailored cloud solutions that streamline operations, enhance collaboration, and ensure data security. Whether you're migrating to the cloud, optimizing infrastructure, or building cloud-native applications, our expertise ensures seamless integration and maximum efficiency.
+                  Empower your business with the flexibility and scalability of cloud technology. At Ziba Innovatives, we deliver tailored cloud solutions that streamline operations, enhance collaboration, and ensure data security. Whether you&apos;re migrating to the cloud, optimizing infrastructure, or building cloud-native applications, our expertise ensures seamless integration and maximum efficiency.
                   </p>
 
                   <div>

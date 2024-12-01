@@ -14,7 +14,7 @@ const Projects = () => {
                Tailored solutions with proven impact—explore our work.
             </h2>
             <p className="text-center text-sm md:text-base lg:text-lg md:w-[80%] xl:w-[60%] text-input">
-               Take a look at some of our recent projects and see how we've
+               Take a look at some of our recent projects and see how we&apos;ve
                helped other businesses elevate their brand and drive business
                growth.
             </p>
