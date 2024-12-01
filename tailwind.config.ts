@@ -21,6 +21,7 @@ const config: Config = {
             submain: "#34CD33",
             input: "#EBECED",
             second:"#181D2A",
+            content:"#5C5E60",
             background: "hsl(var(--background))",
             foreground: "hsl(var(--foreground))",
             card: {

@@ -18,7 +18,7 @@ const About = () => {
          />
          <div className="flex items-center justify-center flex-col gap-4 ">
             <p className="uppercase text-center">about us</p>
-            <h3 className="text-center">Why Choose Us</h3>
+            <h2 className="text-center">Why Choose Us?</h2>
             <p>
                We empower businesses to thrive in a digital-first world. As a
                leading SaaS company, we specialize in creating custom software

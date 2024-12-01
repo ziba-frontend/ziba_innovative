@@ -9,6 +9,7 @@ import morpheus from "@/public/svgs/morpheus.svg"
 import samsung from "@/public/svgs/samsung.svg"
 import monday from "@/public/svgs/monday.svg"
 import segment from "@/public/svgs/segment.svg"
+import clock from "@/public/svgs/hero-clock.svg"
 
 const Hero = () => {
    return (
@@ -22,10 +23,11 @@ const Hero = () => {
             
             />
             <div className="md:w-3/4 xl:w-[60%] flex flex-col gap-3 items-center justify-center text-center absolute text-white top-[20%]">
-               <h1 className="text-6xl uppercase font-bold text-center">
+               <h1 className="sm:text-3xl md:text-4xl lg:text-6xl uppercase font-bold text-center">
                   empowering growth through innovation
                </h1>
-               <p>
+               <p className="flex items-center gap-4">
+                  <span><Image src={clock} alt="clock"/></span>
                   Transforming Complex Technological Challenges Into Seemless
                   Solutions
                </p>
@@ -42,19 +44,19 @@ const Hero = () => {
                </div>
             </div>
             {/* partners */}
-            <div className="md:w-[80%] border mx-auto rounded-t-xl p-6 flex flex-col gap-6 items-center justify-center  -bottom-[40px] absolute bg-white z-30">
+            <div className="w-[98%] sm:w-[90%] md:w-[80%] border mx-auto rounded-t-xl p-6 flex flex-col gap-6 items-center justify-center  -bottom-[70px] md:-bottom-[100px] absolute bg-white z-30">
                <p className="font-bold text-center">
                   Over 32k+ software businesses growing with Ziba Innovatives
                </p>
                {/* parters */}
 
-               <div className="flex items-center justify-center gap-8">
-                  <Image src={openzep} alt="ziba"/>
-                  <Image src={oracle} alt="ziba"/>
-                  <Image src={morpheus} alt="ziba"/>
-                  <Image src={samsung} alt="ziba"/>
-                  <Image src={monday} alt="ziba"/>
-                  <Image src={segment} alt="ziba"/>
+               <div className="flex items-center justify-center gap-8 flex-wrap">
+                  <Image src={openzep} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
+                  <Image src={oracle} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
+                  <Image src={morpheus} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
+                  <Image src={samsung} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
+                  <Image src={monday} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
+                  <Image src={segment} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
                </div>
             </div>
          </div>
