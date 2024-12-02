@@ -36,7 +36,7 @@ const Hero = () => {
                      Try free trial
                   </Button>
                   <Button
-                     className="rounded-full p-6 bg-transparent"
+                     className="rounded-full p-6 bg-transparent border-none"
                      variant="outline"
                   >
                      <Video /> View Demo
@@ -51,12 +51,12 @@ const Hero = () => {
                {/* parters */}
 
                <div className="flex items-center justify-center gap-8 flex-wrap">
-                  <Image src={openzep} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
-                  <Image src={oracle} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
-                  <Image src={morpheus} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
-                  <Image src={samsung} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
-                  <Image src={monday} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
-                  <Image src={segment} alt="ziba" className="w-[80px] md:w-[120px] lg:w-auto"/>
+                  <Image src={openzep} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
+                  <Image src={oracle} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
+                  <Image src={morpheus} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
+                  <Image src={samsung} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
+                  <Image src={monday} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
+                  <Image src={segment} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
                </div>
             </div>
          </div>

@@ -53,21 +53,26 @@ const Footer = () => {
          </div>
 
          <div className="bg-main p-6 text-white relative min-h-[70vh] flex flex-col items-center z-10">
-            <div className="container mx-auto px-4 border-b border-input py-6 flex flex-col items-center sm:flex-row sm:justify-between sm:items-start text-center sm:text-left border-t lg:py-20">
-               <div className="flex flex-col items-center sm:items-start justify-center w-full lg:w-[40%] z-10">
+            <div className="container mx-auto px-4 border-b border-input py-6 flex flex-col items-center sm:flex-row sm:justify-between sm:items-start text-center sm:text-left border-t lg:py-20 ">
+               <div className="flex flex-col items-center sm:items-start justify-center w-full lg:w-[40%] xl:w-[55%] 2xl:w-[60%] z-10 ">
                   <div className="flex flex-col items-center sm:items-start gap-3">
-                     <Image
-                        src={Logo}
-                        alt="ZibaInnovative"
-                     />
-                     <h4 className="italic bold">Ziba Innovatives</h4>
+                     <Link
+                        href="/"
+                        className="flex items-center gap-2"
+                     >
+                        <Image
+                           src={Logo}
+                           alt="ZibaInnovative"
+                        />
+                        <h4 className="italic bold">Ziba Innovatives</h4>
+                     </Link>
                      <p className="text-input">
                         Empowering Growth Through Innovation
                      </p>
                   </div>
                </div>
 
-               <div className="grid grid-cols-1 gap-6 mt-6 sm:mt-0 md:grid-cols-2 xl:grid-cols-3 w-full z-10">
+               <div className="grid grid-cols-1 gap-6 mt-6 sm:mt-0 md:grid-cols-2 xl:grid-cols-3 w-full z-10 ">
                   {Links.map((link, index) => (
                      <div key={index}>
                         <h3 className="font-medium mb-4">{link.title}</h3>
