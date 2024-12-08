@@ -15,7 +15,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const Offers = () => {
    const [api, setApi] = React.useState<CarouselApi>();
-   const [current, setCurrent] = React.useState(0);
+ 
 
    return (
       <div className="relative">
