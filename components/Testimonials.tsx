@@ -127,7 +127,7 @@ const Testimonials = () => {
                               <Image
                                  src={segment}
                                  alt="segment"
-                                 className="w-14 h-14"
+                                 className="w-14 h-14 md:w-auto md:h-auto"
                               />
                            </div>
                         </div>
