@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Swiper as SwiperType, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperType, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { Pagination } from "swiper/modules";
 import Image from "next/image";
@@ -39,6 +39,8 @@ const data = [
    // },
 ];
 const Testimonials = () => {
+   const swiperRef = React.useRef<SwiperType>();
+
    return (
       <div className="px-2 mx-auto flex items-center justify-center flex-col gap-6 py-8 md:py-16">
          <p className="uppercase">TESTIMONIALS</p>
@@ -47,6 +49,9 @@ const Testimonials = () => {
          </h2>
          <section className="mt-5 container text-light">
             <SwiperType
+               onBeforeInit={(swiper) => {
+                  swiperRef.current = swiper;
+               }}
                pagination={{ dynamicBullets: true, clickable: true }}
                modules={[Pagination]}
                breakpoints={{
@@ -61,7 +66,7 @@ const Testimonials = () => {
                      key={index}
                      className="py-10"
                   >
-                     <div className="py-8 container flex gap-6 md:gap-8 lg:justify-between items-center flex-col md:flex-row">
+                     <div className="py-8 container flex gap-10 md:gap-8 lg:justify-between items-center flex-col-reverse md:flex-row">
                         <div className="bg-[#E8F2FF] rounded-[14px] px-6 relative z-10">
                            <Image
                               src={dot}
@@ -73,27 +78,35 @@ const Testimonials = () => {
                               alt="review1"
                               className="-mt-20"
                            />
-                           <div className="shadow-lg flex items-center justify-center p-2 bg-white font-bold w-10 h-10 rounded-full cursor-pointer -left-4 absolute top-1/2">
+                           {/* navigation  */}
+                           <div 
+                              onClick={() => swiperRef.current?.slidePrev()}
+                              className="shadow-lg flex items-center justify-center p-2 bg-white font-bold w-10 h-10 rounded-full cursor-pointer -left-4 absolute top-1/2"
+                           >
                               {"<"}
                            </div>
-                           <div className="shadow-lg flex items-center justify-center p-2 bg-white font-bold w-10 h-10 rounded-full cursor-pointer -right-4 absolute top-1/2">
+                           <div 
+                              onClick={() => swiperRef.current?.slideNext()}
+                              className="shadow-lg flex items-center justify-center p-2 bg-white font-bold w-10 h-10 rounded-full cursor-pointer -right-4 absolute top-1/2"
+                           >
                               {">"}
                            </div>
                            <Image
                               src={up}
                               alt="up"
-                              className="absolute -top-12 -left-12"
+                              className="absolute -top-12 -left-12 w-12 md:w-auto"
                            />
                            <Image
                               src={down}
                               alt="down"
-                              className="absolute -bottom-12 -right-12"
+                              className="absolute -bottom-12 -right-12 w-12 md:w-auto"
                            />
                         </div>
                         <div className="flex flex-col gap-4 md:w-[60%] xl:w-1/2">
                            <Image
                               src={quote}
                               alt="quote"
+                              className="w-8 md:w-10 "
                            />
                            <Image
                               src={stars}
@@ -113,6 +126,7 @@ const Testimonials = () => {
                               <Image
                                  src={segment}
                                  alt="segment"
+                                 className="w-14 h-14"
                               />
                            </div>
                         </div>

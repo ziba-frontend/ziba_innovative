@@ -2,6 +2,7 @@
 import React from "react";
 import { Swiper as SwiperType, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import Image from "next/image";
 import person1 from "@/public/images/person1.png";
@@ -88,9 +89,9 @@ const Team = () => {
                {data.map((dev, index) => (
                   <SwiperSlide
                      key={index}
-                     className="py-10"
+                     className="py-10 "
                   >
-                     <div className="flex flex-col  sm:min-w-[320px]  items-center border-2 border-input min-h-[540px]">
+                     <div className="flex flex-col  sm:min-w-[320px]  items-center border-2 border-input h-[600px]">
                         <Image
                            src={dev.image}
                            alt={dev.name}

@@ -9,8 +9,8 @@ import Testimonials from "@/components/Testimonials";
 const Company = () => {
    return (
       <div className="py-6 md:py-10">
-         <div className="container py-6">
-            <h1 className="lg:w-3/4 2xl:w-[60%]">
+         <div className="container py-6 md:py-8">
+            <h1 className="lg:w-3/4 2xl:w-[60%] xl:text-5xl">
                Visionary Creativity for Unmatched Business Growth
             </h1>
          </div>

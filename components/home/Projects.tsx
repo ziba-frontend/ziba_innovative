@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
@@ -6,6 +7,21 @@ import Music from "@/public/images/music.png";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const Projects = () => {
+   const tabs = ["design", "marketing", "saas", "development"];
+   const [currentTab, setCurrentTab] = React.useState("design");
+
+   const handlePrevious = () => {
+      const currentIndex = tabs.indexOf(currentTab);
+      const newIndex = currentIndex === 0 ? tabs.length - 1 : currentIndex - 1;
+      setCurrentTab(tabs[newIndex]);
+   };
+
+   const handleNext = () => {
+      const currentIndex = tabs.indexOf(currentTab);
+      const newIndex = currentIndex === tabs.length - 1 ? 0 : currentIndex + 1;
+      setCurrentTab(tabs[newIndex]);
+   };
+
    return (
       <div className="bg-main py-6 md:py-12">
          <div className="container flex flex-col items-center justify-center px-4 md:px-8 text-white gap-4">
@@ -21,7 +37,8 @@ const Projects = () => {
 
             {/* Tabs Section */}
             <Tabs
-               defaultValue="design"
+               value={currentTab}
+               onValueChange={setCurrentTab}
                className="w-full mt-8 py-6"
             >
                <TabsList className="flex space-x-4 overflow-x-auto whitespace-nowrap no-scrollbar p-4 rounded-full h-[50px] md:h-[70px] items-center justify-between w-full lg:w-[60%] mx-auto">
@@ -89,12 +106,18 @@ const Projects = () => {
                <TabsContent value="marketing"></TabsContent>
             </Tabs>
 
-            {/* Navigation Arrows */}
+            {/* Updated Navigation Arrows */}
             <div className="flex items-center justify-center py-8 gap-4">
-               <div className="rounded-full p-4 bg-submain cursor-pointer hover:bg-opacity-80">
+               <div 
+                  onClick={handlePrevious}
+                  className="rounded-full p-4 bg-submain cursor-pointer hover:bg-opacity-80"
+               >
                   <ArrowLeft size={24} />
                </div>
-               <div className="rounded-full p-4 bg-submain cursor-pointer hover:bg-opacity-80">
+               <div 
+                  onClick={handleNext}
+                  className="rounded-full p-4 bg-submain cursor-pointer hover:bg-opacity-80"
+               >
                   <ArrowRight size={24} />
                </div>
             </div>

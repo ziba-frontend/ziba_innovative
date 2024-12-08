@@ -11,13 +11,13 @@ const Portfolio = () => {
    return (
       <div className="py-6 md:py-8">
          <div className="flex flex-col gap-6 items-center justify-center container">
-            <h2 className="text-center">Our Work Speaks for Itself</h2>
-            <p className="text-center">
+            <h1 className="text-center xl:text-5xl">Our Work Speaks for Itself</h1>
+            <p className="text-center md:w-5/6 lg:w-3/4 xl:w-[60%]">
                We have helped numerous businesses, from ambitious startups to
                established enterprises, transform their ideas into innovative,
                impactful solutions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 w-[90%] md:w-1/2">
+            <div className="flex flex-col sm:flex-row gap-6 w-[90%] md:w-1/2 xl:w-[40%]">
                <div className="flex flex-col gap-3">
                   <h4>195k+ Users</h4>
                   <small>

@@ -3,13 +3,13 @@ import { Button } from "../ui/button";
 import hero from "@/public/images/hero.jpg";
 import Image from "next/image";
 import { Video } from "lucide-react";
-import openzep from "@/public/svgs/openzep.svg"
-import oracle from "@/public/svgs/oracle.svg"
-import morpheus from "@/public/svgs/morpheus.svg"
-import samsung from "@/public/svgs/samsung.svg"
-import monday from "@/public/svgs/monday.svg"
-import segment from "@/public/svgs/segment.svg"
-import clock from "@/public/svgs/hero-clock.svg"
+import openzep from "@/public/svgs/openzep.svg";
+import oracle from "@/public/svgs/oracle.svg";
+import morpheus from "@/public/svgs/morpheus.svg";
+import samsung from "@/public/svgs/samsung.svg";
+import monday from "@/public/svgs/monday.svg";
+import segment from "@/public/svgs/segment.svg";
+import clock from "@/public/svgs/hero-clock.svg";
 
 const Hero = () => {
    return (
@@ -20,14 +20,19 @@ const Hero = () => {
                alt="ziba innovatives"
                className="w-full h-full object-cover"
                fill
-            
             />
             <div className="md:w-3/4 xl:w-[60%] flex flex-col gap-3 items-center justify-center text-center absolute text-white top-[20%]">
                <h1 className="sm:text-3xl md:text-4xl lg:text-6xl uppercase font-bold text-center">
                   empowering growth through innovation
                </h1>
-               <p className="flex items-center gap-4">
-                  <span><Image src={clock} alt="clock"/></span>
+               <p className="flex md:items-center md:gap-2 justify-center">
+                  <span>
+                     <Image
+                        src={clock}
+                        alt="clock"
+                        className="w-8 md:w-auto"
+                     />
+                  </span>
                   Transforming Complex Technological Challenges Into Seemless
                   Solutions
                </p>
@@ -51,12 +56,36 @@ const Hero = () => {
                {/* parters */}
 
                <div className="flex items-center justify-center gap-8 flex-wrap">
-                  <Image src={openzep} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
-                  <Image src={oracle} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
-                  <Image src={morpheus} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
-                  <Image src={samsung} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
-                  <Image src={monday} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
-                  <Image src={segment} alt="ziba" className="w-[80px] md:w-[120px] lg:w-[150px]"/>
+                  <Image
+                     src={openzep}
+                     alt="ziba"
+                     className="w-[80px] md:w-[120px] lg:w-[150px]"
+                  />
+                  <Image
+                     src={oracle}
+                     alt="ziba"
+                     className="w-[80px] md:w-[120px] lg:w-[150px]"
+                  />
+                  <Image
+                     src={morpheus}
+                     alt="ziba"
+                     className="w-[80px] md:w-[120px] lg:w-[150px]"
+                  />
+                  <Image
+                     src={samsung}
+                     alt="ziba"
+                     className="w-[80px] md:w-[120px] lg:w-[150px]"
+                  />
+                  <Image
+                     src={monday}
+                     alt="ziba"
+                     className="w-[80px] md:w-[120px] lg:w-[150px]"
+                  />
+                  <Image
+                     src={segment}
+                     alt="ziba"
+                     className="w-[80px] md:w-[120px] lg:w-[150px]"
+                  />
                </div>
             </div>
          </div>
