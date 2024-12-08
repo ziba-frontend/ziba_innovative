@@ -11,6 +11,7 @@ import segment from "@/public/svgs/segment.svg";
 import dot from "@/public/svgs/dot.svg";
 import down from "@/public/svgs/down.svg";
 import up from "@/public/svgs/up.svg";
+import type { Swiper } from 'swiper';
 
 const data = [
    {
@@ -39,7 +40,7 @@ const data = [
    // },
 ];
 const Testimonials = () => {
-   const swiperRef = React.useRef<SwiperType>();
+   const swiperRef = React.useRef<Swiper>();
 
    return (
       <div className="px-2 mx-auto flex items-center justify-center flex-col gap-6 py-8 md:py-16">
