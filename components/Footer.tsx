@@ -41,7 +41,8 @@ const Footer = () => {
 
    return (
       <>
-         <div className="container p-6 flex flex-col items-center text-center justify-center md:flex-row md:justify-between bg-main text-white relative rounded-t-[40px] z-10">
+         <div className="container p-6 flex flex-col items-center text-center justify-center md:flex-row md:justify-between bg-main text-white relative rounded-t-[40px] z-10 bevel-footer">
+            
             <h2 className="w-full md:w-[30%] mb-4 md:mb-0 text-center md:text-left">
                Let’s discuss and bring your vision to life.
             </h2>
@@ -52,7 +53,7 @@ const Footer = () => {
             </Link>
          </div>
 
-         <div className="bg-main p-6 text-white relative min-h-[70vh] flex flex-col items-center z-10">
+         <div className="bg-main p-6 text-white relative min-h-[70vh] flex flex-col items-center z-[5]">
   
 
             <div className="container mx-auto px-4 border-b border-input py-6 flex flex-col items-center sm:flex-row sm:justify-between sm:items-start text-center sm:text-left border-t lg:py-20 ">
