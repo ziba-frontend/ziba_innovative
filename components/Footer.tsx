@@ -104,12 +104,12 @@ const Footer = () => {
             <Image
                src={circle2}
                alt="circle"
-               className="absolute top-1/2 left-0 -translate-y-1/2 z-0"
+               className="absolute top-1/2 left-0 -translate-y-1/2 z-0 w-20 sm:w-40 lg:w-auto"
             />
             <Image
                src={circle}
                alt="circle"
-               className="absolute bottom-0 right-0 z-0"
+               className="absolute bottom-0 right-0 z-0 w-20 sm:w-40 lg:w-auto"
             />
          </div>
       </>

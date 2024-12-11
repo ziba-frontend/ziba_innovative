@@ -17,7 +17,7 @@ import sales from "@/public/images/sales.png"
 const Services = () => {
    return (
       <div className="bg-[#F8F8F8] pt-10">
-      <div className="bg-input mt-[60px] flex items-center justify-center flex-col gap-4 p-6 py-6 md:py-8">
+      <div className="bg-input mt-[60px] flex items-center justify-center flex-col gap-4 p-6 py-6 md:py-12">
          <p className="uppercase text-center">Our services</p>
          <h2 className="text-center capitalize md:w-3/4 xl:w-[60%] mb-2 md:mb-4">
             save time managing your business with our best services

@@ -10,7 +10,7 @@ import Faqs from "@/components/Faqs";
 const Portfolio = () => {
    return (
       <div className="py-6 md:py-8">
-         <div className="flex flex-col gap-6 items-center justify-center container">
+         <div className="flex flex-col gap-6 items-center justify-center container pt-6 lg:pt-10">
             <h1 className="text-center xl:text-5xl">Our Work Speaks for Itself</h1>
             <p className="text-center md:w-5/6 lg:w-3/4 xl:w-[60%]">
                We have helped numerous businesses, from ambitious startups to
