@@ -19,12 +19,7 @@ body {
       -ms-overflow-style: none;
       scrollbar-width: none;
    }
-   .bow-left {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 50%);
-   }
-   .bow-right {
-      clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
-   }
+
 }
 
 @layer base {
@@ -93,85 +88,21 @@ body {
    small {
       @apply text-[#969696];
    }
-   .bevel-section {
-      --_br: 40px;
-      --_corner-color: theme('colors.main');
-      position: relative;
-      isolation: isolate;
-   }
 
-   .bevel-section::before {
-      --_size: var(--_br);
-      content: "";
-      position: absolute;
-      width: var(--_size);
-      aspect-ratio: 1;
-      background-image: radial-gradient(
-         circle at 100% 100%,
-         transparent var(--_size),
-         var(--_corner-color) calc(var(--_size) + 1px)
-      );
-      rotate: 180deg;
-      bottom: 0;
-      left: 0;
-      transform-origin: 0 100%;
-      z-index: 20;
-      pointer-events: none;
-   }
+ 
+.bevel{
+   mask:right calc(var(--s) + var(--r)) top 0 var(--_m),
+   right calc(var(--s) + var(--r)) var(--_m) ,
+   radial-gradient(var(--s) at 100% 0,#000 99%,#000 101%)
+   calc(-1*var(--r)) var(--r) no-repeat,
+   conic-gradient(
+      at calc(100% - var(--s) -2 * var(--r)) calc(var(--s) + 2* var(--r)) ,
+      #0000 25%,
+      #000 0
+   )
+}
 
-   .bevel-section::after {
-      --_size: var(--_br);
-      content: "";
-      position: absolute;
-      width: var(--_size);
-      aspect-ratio: 1;
-      background-image: radial-gradient(
-         circle at 100% 100%,
-         transparent var(--_size),
-         var(--_corner-color) calc(var(--_size) + 1px)
-      );
-      rotate: 90deg;
-      bottom: 0;
-      right: 0;
-      transform-origin: 100% 100%;
-      z-index: 20;
-      pointer-events: none;
-   }
 
-   .bevel-footer {
-      --_br: 40px;
-      position: relative;
-      isolation: isolate;
-   }
-
-   .bevel-footer::before,
-   .bevel-footer::after {
-      --_size: var(--_br);
-      content: "";
-      position: absolute;
-      width: var(--_size);
-      aspect-ratio: 1;
-      background-image: radial-gradient(
-         circle at 100% 100%,
-         transparent var(--_size),
-         var(--_corner-color, theme('colors.main')) calc(var(--_size) + 1px)
-      );
-      bottom: 0;
-      z-index: 20;
-      pointer-events: none;
-   }
-
-   .bevel-footer::before {
-      rotate: 180deg;
-      left: 0;
-      transform-origin: 0 100%;
-   }
-
-   .bevel-footer::after {
-      rotate: 90deg;
-      right: 0;
-      transform-origin: 100% 100%;
-   }
 }
 
 .swiper-pagination-bullet {
